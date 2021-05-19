@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14d23a7481.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Portafolio Dinamico - Christian Gueavra</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Christian Guevara</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="#">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            
+            <div class="item" 
+                 data-categoria="ciudades" 
+                 data-etiquetas="ciudades autos carros calles"
+                 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="item" 
+                 data-categoria="personas" 
+                 data-etiquetas="personas mujeres"
+                 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="personas" 
+                 data-etiquetas="personas mujeres"
+                 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="ciudades" 
+                 data-etiquetas="ciudades autos carros calles autopista paisaje"
+                 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="paisaje" 
+                 data-etiquetas="paisaje playa costa mar arena naturaleza"
+                 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="animales" 
+                 data-etiquetas="animales leon felino africa naturaleza fauna"
+                 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="paisaje" 
+                 data-etiquetas="monstañas altura paisaje naturaleza"
+                 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="naturaleza" 
+                 data-etiquetas="naturaleza hojas verde ambiente"
+                 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                 data-categoria="animales" 
+                 data-etiquetas="animales oso panda naturaleza verde"
+                 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+                 
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <!-- Overlay de la imagen seleccionada -->
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="img/ciudad1.png" alt="">
+            </div>
+            <p class="descripcion">1.-Lorem ipsum dolor sit amet.</p>
+        </section>
+        
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <!-- twitter -->
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com/_chr1stian" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="contenedor-icono">
+                    <a href="https://es-la.facebook.com/login/" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="creado-por">
+                <p>Sitio creado por <a href="">Christian Guevara</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
